@@ -64,7 +64,7 @@ class LoadStreamlitUI:
                 if not self.user_controls["TAVILY_API_KEY"]:
                     st.warning("⚠️ Please enter your TAVILY_API_KEY key to proceed. Don't have? refer : https://app.tavily.com/home")
             
-            if "state" not in st.session_state:
+            if "state" not in st.session_state: 
                 st.session_state.state = self.initialize_session()
             
             
